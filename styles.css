@@ -1,0 +1,84 @@
+.container{
+  padding:40px;
+ }
+ @media screen and (max-width: 999px) {
+  .container{
+
+display:grid;
+grid-template-areas: 
+" header header"
+"content content"
+"signup feature"
+
+"feature1 feature2";
+ /* row-gap: 20px;
+column-gap: 30px;  */
+}
+ }
+  @media screen and (min-width: 1000px){ 
+ .container{
+
+  display:grid;
+grid-template-areas: 
+" header header header"
+
+"feature feature1 feature2 "
+"signup signup signup"
+"content content content";
+/* row-gap: 20px;
+column-gap: 30px; */
+ }
+}
+ 
+ @media screen and (max-width: 600px) {
+ .container{
+
+  display:grid;
+grid-template-areas: 
+" header"
+
+"content "
+"signup"
+"feature"
+
+"feature1"
+"feature2";
+/* row-gap: 20px;
+column-gap: 30px; */
+ }
+ }
+ .box{
+  font-size: 50px;
+  text-align: center;
+ 
+  /* margin-left: auto;
+  margin-right: auto; */
+
+  height: 200px;
+  border:1px solid lightgrey;
+ }
+ #box1{
+  background-color: lightblue;
+  grid-area:header;
+ }
+ #box2{
+  background-color:lightgoldenrodyellow ;
+  grid-area:feature;
+ }
+ #box3{
+  background-color:peachpuff ;
+  grid-area:feature1;
+ }
+ #box4{
+  background-color:lightcoral;
+  grid-area:feature2;
+
+ }
+ #box5{
+  background-color:lightcyan;
+  grid-area:signup;
+ }
+#box6{
+  background-color: lightgrey;
+grid-area:content;
+}
